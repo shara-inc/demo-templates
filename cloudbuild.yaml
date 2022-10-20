@@ -1,0 +1,13 @@
+steps:
+  - name: node
+    dir: 'api/nestjs/demo-api'
+    entrypoint: npm
+    args: ['install']
+  - name: node
+    dir: 'api/nestjs/demo-api'
+    entrypoint: npm
+    args: ['test']
+  - name: node
+    dir: 'api/nestjs/demo-api'
+    entrypoint: npm
+    args: ['run', 'build']
